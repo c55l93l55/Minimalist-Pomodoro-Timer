@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "极简番茄钟",
+    "version": "1.1",
+    "permissions": [
+        "alarms",
+        "notifications",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}

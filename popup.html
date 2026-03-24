@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>番茄钟</h1>
+        <div class="timer-display" id="timerDisplay">40:00</div>
+
+        <div class="input-group">
+            <input type="number" id="minutesInput" value="40" min="1">
+            <span>分钟</span>
+        </div>
+
+        <!-- 【新增】通知内容输入框 -->
+        <div class="input-group-vertical">
+            <label for="messageInput">提醒内容：</label>
+            <input type="text" id="messageInput" placeholder="主人，该站起来活动活动了！">
+        </div>
+
+        <div class="button-group">
+            <button id="startBtn" class="primary">开始</button>
+            <button id="pauseBtn">暂停</button>
+            <button id="resetBtn">重置</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

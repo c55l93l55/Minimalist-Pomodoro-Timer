@@ -1,0 +1,99 @@
+body {
+  width: 240px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d3436;
+  margin-bottom: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #636e72;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #dfe6e9;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #dfe6e9;
+  color: #2d3436;
+}
+
+button:hover {
+  background-color: #b2bec3;
+}
+
+button.primary {
+  background-color: #0984e3;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #00a8ff;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 【新增】垂直布局输入组样式 */
+.input-group-vertical {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group-vertical label {
+  display: block;
+  font-size: 0.8rem;
+  color: #636e72;
+  margin-bottom: 5px;
+}
+
+.input-group-vertical input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dfe6e9;
+  border-radius: 4px;
+  box-sizing: border-box; /* 确保宽度包含padding */
+  outline: none;
+  font-size: 0.9rem;
+}
